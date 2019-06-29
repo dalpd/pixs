@@ -6,7 +6,8 @@ import           Codec.Picture                   (DynamicImage (..), Image,
                                                   PixelRGBA8, readImage,
                                                   writePng)
 import           Data.Either                     (partitionEithers)
-import           Options.Applicative             (Parser, (<>))
+import           Data.Monoid                     
+import           Options.Applicative             (Parser)
 import qualified Options.Applicative             as A
 import qualified Pixs.Operations.Image           as Arith
 import qualified Pixs.Operations.PointOperations as PO
